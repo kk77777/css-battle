@@ -1,0 +1,31 @@
+<div m>
+  <div></div>
+  <div a></div>
+  <div></div>
+  <div b></div>
+  <div></div>
+  <div b></div>
+</div>
+<style>
+  body {
+    background: #62306d;
+  }
+  div[m] {
+    width: 300;
+    height: 200;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  div[a] {
+    background: #f7ec7d;
+    border-radius: 50% 50% 0% 0%;
+  }
+  div[b] {
+    background: #f7ec7d;
+    border-radius: 0% 0% 50% 50%;
+  }
+</style>
