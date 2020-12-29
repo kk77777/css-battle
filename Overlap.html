@@ -1,0 +1,31 @@
+<div a><div b></div></div>
+<div c></div>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #09042a;
+  }
+  div {
+    height: 150;
+    width: 150;
+    border-radius: 50%;
+    position: relative;
+  }
+  div[a] {
+    background: #7b3f61;
+    overflow: hidden;
+    left: 7%;
+    z-index: 5;
+  }
+  div[b] {
+    background: #09042a;
+    position: absolute;
+    left: 65.5%;
+  }
+  div[c] {
+    background: #e78481;
+    left: -6.5%;
+  }
+</style>
