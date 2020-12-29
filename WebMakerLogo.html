@@ -1,0 +1,28 @@
+<div a></div>
+<div b></div>
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2b6;
+  }
+  div {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    position: relative;
+  }
+  div[a] {
+    border-top: 129.90381px solid #ff6d00;
+    filter: drop-shadow(20px 0px 0px #fd4602);
+    left: 2.5%;
+  }
+  div[b] {
+    border-top: 129.90381px solid #fd4602;
+    transform: rotate(180deg);
+    filter: drop-shadow(-20px 0px 0px #ff6d00);
+    left: -7.9%;
+  }
+</style>
