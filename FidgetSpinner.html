@@ -1,0 +1,52 @@
+<div a z></div>
+<div b>
+  <div r x z></div>
+  <div s></div>
+  <div r y z></div>
+</div>
+<div c z></div>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #09042a;
+  }
+  div[z] {
+    width: 60;
+    height: 60;
+    border-radius: 50%;
+    border: 10px solid #e78481;
+    position: relative;
+  }
+  div[a] {
+    left: 20;
+    z-index: 2;
+  }
+  div[b] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div[r] {
+    background: #f5bb9c;
+    border: 10px solid #09042a;
+  }
+  div[x] {
+    top: 7;
+  }
+  div[y] {
+    top: -7;
+  }
+  div[s] {
+    background: #e78481;
+    width: 50;
+    height: 40;
+  }
+  div[c] {
+    position: relative;
+    left: -20;
+  }
+</style>
