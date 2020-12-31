@@ -1,0 +1,42 @@
+<div>
+  <p></p>
+  <p a y></p>
+  <p a></p>
+  <p y></p>
+  <p a r y></p>
+  <p></p>
+  <p y></p>
+  <p a r></p>
+</div>
+<style>
+  * {
+    margin: 0;
+    background: #1a4341;
+  }
+  div {
+    display: grid;
+    padding: 50px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-template-columns: auto auto auto auto;
+    gap: 19px;
+  }
+  p {
+    background: #998235;
+    height: 50;
+    width: 50;
+    border-radius: 50%;
+  }
+  [y] {
+    background: #f3ac3c;
+  }
+  [a] {
+    border-radius: 50px 50px 0px 0px;
+  }
+  [r] {
+    transform: rotate(180deg);
+  }
+</style>
