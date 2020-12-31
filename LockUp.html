@@ -1,0 +1,31 @@
+<div a></div>
+<div b></div>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e38f66;
+  }
+  div {
+    background: #aa445f;
+    width: 140;
+    height: 140;
+    border-radius: 50%;
+  }
+  [a] {
+    background-image: repeating-conic-gradient(
+      #f7ec7d 0deg,
+      #f7ec7d 90deg,
+      #aa445f 90deg,
+      #aa445f 180deg
+    );
+    border: 30px solid #aa445f;
+  }
+  [b] {
+    width: 80;
+    height: 80;
+    position: absolute;
+  }
+</style>
