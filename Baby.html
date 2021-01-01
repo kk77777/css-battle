@@ -1,0 +1,43 @@
+<div a>
+  <div b></div>
+  <div c></div>
+</div>
+<style>
+  body {
+    background: #293462;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  [a] {
+    background: #fe5f55;
+    width: 200;
+    height: 200;
+    clip-path: inset(0 round 100px 100px 50px 50px);
+  }
+  [b],
+  [c] {
+    background: #fff1c1;
+
+    position: relative;
+  }
+  [b] {
+    border-radius: 50%;
+    top: 90;
+    left: 20;
+    width: 60;
+    height: 60;
+    box-shadow: 4px -115px 0 16px #fff1c1;
+    -webkit-box-reflect: right 40px;
+  }
+  [c] {
+    background: #fff1c1;
+    width: 20;
+    height: 10;
+    border-radius: 100px 0 0 100px;
+    position: relative;
+    top: 110;
+    left: 80;
+    -webkit-box-reflect: right 0px;
+  }
+</style>
