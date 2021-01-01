@@ -1,0 +1,58 @@
+<div a></div>
+<div b></div>
+<div e></div>
+
+<div c>
+  <div d></div>
+</div>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a4341;
+  }
+
+  [a] {
+    background: #f3ac3c;
+    width: 10;
+    height: 180;
+    position: absolute;
+    transform: translateY(-10px);
+    border-radius: 100px;
+  }
+  [b] {
+    background: #f3ac3c;
+    width: 10;
+    height: 180;
+    position: absolute;
+    transform: translateX(7px) translateY(-4px) rotate(60deg);
+    border-radius: 100px;
+  }
+  [e] {
+    background: #f3ac3c;
+    width: 10;
+    height: 180;
+    position: absolute;
+    transform: translateX(8px) translateY(4px) rotate(120deg);
+    border-radius: 100px;
+  }
+  [c] {
+    position: absolute;
+    background: #f3ac3c;
+    width: 100;
+    height: 100;
+    border-radius: 50%;
+  }
+  [d] {
+    background: #998235;
+    height: 30;
+    width: 30;
+    border-radius: 50%;
+    position: relative;
+    top: 20;
+    left: 20;
+    box-shadow: 40px -10px 0 -10px #998235, 15px 40px 0 -5px #998235;
+  }
+</style>
