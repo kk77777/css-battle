@@ -1,0 +1,36 @@
+<div a></div>
+<div b></div>
+<div c></div>
+<div d></div>
+
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #191919;
+  }
+  div {
+    position: absolute;
+    background: #f9e492;
+    width: 100;
+    height: 50;
+    border-radius: 100px 100px 0px 0px;
+  }
+  [a] {
+    position: relative;
+    top: -25;
+    left: -50;
+  }
+  [b] {
+    transform: translate(50px, 25px) rotate(180deg);
+  }
+  [c],
+  [d] {
+    background: #4f77ff;
+    transform: translate(25px, -50px) rotate(90deg);
+  }
+  [d] {
+    transform: translate(-25px, 50px) rotate(270deg);
+  }
+</style>
