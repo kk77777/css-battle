@@ -1,0 +1,46 @@
+<div a></div>
+<div b></div>
+<div c></div>
+<style>
+  * {
+    margin: 0;
+    background: #5dbcf9;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #191919;
+  }
+  [a] {
+    height: 300px;
+    width: 400px;
+    background: radial-gradient(
+      circle,
+      #191919 0 40px,
+      #5dbcf9 40px 50px,
+      #191919 50px 65px,
+      #5dbcf9 65px 75px,
+      #191919 75px 90px,
+      #5dbcf9 90px 100px,
+      #191919 100px
+    );
+    transform: translateX(25px);
+    clip-path: inset(0 0% 0% 50%);
+  }
+  [b],
+  [c] {
+    position: absolute;
+    transform: translateX(-100px);
+  }
+  [b] {
+    height: 200;
+    width: 200;
+    clip-path: polygon(62% 38%, 100% 0, 100% 100%, 62% 62%);
+  }
+  [c] {
+    height: 50;
+    width: 50;
+    border-radius: 10px 0 0 10px;
+  }
+</style>
