@@ -1,0 +1,38 @@
+<div b></div>
+<div a></div>
+
+<style>
+  * {
+    margin: 0;
+    background: repeating-linear-gradient(#191919 0 110px, #5dbcf9 110px 150px);
+  }
+  div {
+    height: 200%;
+    width: 140;
+  }
+  [a] {
+    transform: translate(55px, -80px);
+    box-shadow: 0 0 0 10px #5dbcf9;
+  }
+  [a]:after {
+    content: '';
+    position: absolute;
+    transform: translate(150px, 50px);
+    height: 200%;
+    width: 140;
+    background: inherit;
+    box-shadow: inherit;
+  }
+  [b] {
+    position: absolute;
+    transform: translate(-90px, -30px);
+  }
+  [b]:after {
+    content: '';
+    position: absolute;
+    transform: translate(445px, -50px);
+    height: 200%;
+    width: 140;
+    background: inherit;
+  }
+</style>
