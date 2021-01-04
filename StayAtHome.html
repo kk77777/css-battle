@@ -1,0 +1,46 @@
+<div a></div>
+<div b></div>
+<div c></div>
+<div d></div>
+<style>
+  * {
+    margin: 0;
+    background: #243d83;
+  }
+  body {
+    background: #6592cf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  div {
+    position: absolute;
+  }
+  [a] {
+    width: 200;
+    height: 100;
+    transform: translateY(-50px);
+    clip-path: polygon(50% 0%, 50% 0%, 100% 100%, 0% 100%);
+  }
+  [b] {
+    width: 150;
+    height: 100;
+    transform: translateY(50px);
+    border-radius: 0 0 10px 10px;
+  }
+  [c],
+  [d] {
+    background: #eeb850;
+    width: 100;
+    height: 10;
+    border-radius: 10px;
+  }
+  [d] {
+    width: 50;
+    height: 50;
+    transform: translateY(75px);
+    border-radius: 10px 10px 0 0;
+  }
+</style>
