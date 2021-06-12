@@ -1,0 +1,61 @@
+<div a>
+  <div b>
+    <div c>
+      <div d></div>
+      <div e>
+        <div f></div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  [a] {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #293462;
+  }
+  [b] {
+    width: 150px;
+    height: 100px;
+    background: radial-gradient(
+      circle at 50% -130px,
+      #fe5f55 200px,
+      #a64942 200px
+    );
+    transform: translateY(10px);
+    border-radius: 50px;
+  }
+  [c] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-35px);
+    -webkit-box-reflect: right -80px;
+  }
+  [d] {
+    height: 10px;
+    width: 10px;
+    background: #293462;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+    box-shadow: 25px 55px #293462;
+  }
+  [e] {
+    height: 30px;
+    width: 30px;
+    background: #fff1c1;
+    border-radius: 50%;
+    position: absolute;
+    border: 10px solid #fe5f55;
+  }
+  [f] {
+    height: 10px;
+  }
+</style>
