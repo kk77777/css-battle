@@ -1,0 +1,71 @@
+<div a><div b></div></div>
+<div c><div d></div><div e></div><div f></div></div>
+
+<style>
+  body{
+    background:#998235;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  [a]{
+    width:80;
+    height:180;
+    background:#1A4341;
+  	position:relative;
+    transform:translate(-110px,0px);
+    border-radius:50%;
+    overflow:hidden;
+    -webkit-box-reflect: right 140px;
+  }
+  [b]{
+   	width:90;
+    height:180;
+    background:#0B2429;
+    transform:translate(16px,0px);
+    border-radius:100%;
+    
+   
+  }
+  [c]{
+    height:180;
+    width:180;
+    background:#1A4341;
+    position:absolute;
+    border-radius:50%;
+    z-index:5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  [d]{
+    width:20;
+    height:10;
+    background:#0B2429;
+    border-radius:0px 0px 80px 80px;
+    transform:translate(-30px,10px);
+    border:10px solid #998235;
+    border-top:transparent;
+    -webkit-box-reflect:right 20px;
+  }
+  [e]{
+    position:absolute;
+    width:40px;
+    height:150px;
+    background:#0B2429;
+    border-radius: 100px;
+    transform:translate(0px, 105px);
+    z-index:5;
+  }
+  [f]{
+    position:absolute;
+    width:80;
+    height:40;
+    border-radius:150px 150px 0px 0px;
+    transform:translate(0px,70px);
+    border:20px solid #FFFFFF;
+    border-bottom:transparent;
+  }
+  
+</style>
+
