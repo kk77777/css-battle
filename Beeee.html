@@ -1,0 +1,74 @@
+<div class="outer">
+  <div class="inner a">
+    <div class="circle x"></div>
+    <div class="circle y"></div>
+    <div class="circle-combine"></div>
+  </div>
+  <div class="inner b">
+    <div class="eye"></div>
+  </div>
+</div>
+<style>
+  body {
+    background: #998235;
+    margin: 0;
+  }
+  .outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .inner {
+    height: 75;
+    width: 150;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .a {
+  }
+  .circle {
+    background: #ffffff;
+    height: 75;
+    width: 75;
+    border-radius: 50%;
+  }
+
+  .circle-combine {
+    background: #ffffff;
+    position: absolute;
+    width: 70;
+    height: 40;
+    transform: translateY(18px);
+    z-index: -2;
+  }
+  .b {
+    background-image: linear-gradient(
+      to right,
+      #191919,
+      #191919 17%,
+      #eff33c 17%,
+      #eff33c 24%,
+      #191919 24%,
+      #191919 40%,
+      #eff33c 40%,
+      #eff33c 47%,
+      #191919 47%,
+      #191919 63%,
+      #eff33c 45%,
+      #eff33c 85%
+    );
+    border-radius: 50px;
+  }
+  .eye {
+    background: #191919;
+    height: 15;
+    width: 15;
+    border-radius: 50%;
+    transform: translate(48px, -10px);
+  }
+</style>
