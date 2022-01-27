@@ -1,0 +1,94 @@
+<div class="outer">
+  <div class="c1">
+    <div class="ir"></div>
+  </div>
+  <div class="c2">
+    <div class="i1"></div>
+    <div class="i2"></div>
+  </div>
+  <div class="r1"></div>
+  <div class="r2">
+    <div class="ir1"></div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #f3ac3c;
+  }
+
+  .outer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .c1 {
+    background: #998235;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transform: translateX(45px);
+    display: flex;
+    align-items: center;
+  }
+  .ir {
+    background: #1a4341;
+    width: 10;
+    height: 40;
+    border-radius: 50px;
+    transform: translateX(40px);
+  }
+  .c2 {
+    position: absolute;
+    background: #998235;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translateX(115px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .i1 {
+    background: #f3ac3c;
+    width: 50;
+    height: 50;
+    border-radius: 50%;
+  }
+  .i2 {
+    position: absolute;
+    background: #1a4341;
+    width: 40;
+    height: 40;
+    border-radius: 50%;
+  }
+  .r1 {
+    position: asbolute;
+    z-index: -1;
+    background: #1a4341;
+    width: 150;
+    height: 20;
+    transform: translateX(50px);
+  }
+  .r2 {
+    position: asbolute;
+    background: #998235;
+    width: 40;
+    height: 30;
+    transform: translateX(45px);
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .ir1 {
+    position: absolute;
+    background: #1a4341;
+    width: 20;
+    height: 4;
+    transform: translateY(8px);
+    border-radius: 10px;
+    box-shadow: 0 10px #1a4341;
+  }
+</style>
