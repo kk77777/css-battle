@@ -1,0 +1,30 @@
+<div a>
+  <div b></div>
+  <div c></div>
+</div>
+<style>
+  body{
+    background: repeating-linear-gradient(#D25B70, 150px, #6CB3A9 150px 300px);
+  }
+  [a]{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    width:100%;
+  }
+  [b]{
+    height:200;
+    width:200;
+    border-radius:50%;
+    background: repeating-linear-gradient(#6CB3A9, 15px, #F6DF96 0 25px);
+  }
+  [c]{
+    height: 100px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+    background:#F6DF96;
+    position:absolute;
+    transform:translateY(-50px);
+  }
+</style>
